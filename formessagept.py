@@ -21,3 +21,10 @@ for d in data:
 print('共有', len(new), '筆留言長度小於100')
 print(new[0])
 print(new[1])
+
+good = [] # 篩選所有有提到good的連言
+for d in data:
+    if 'good' in d:
+        good.append(d) # a in 'abc' -> True , b in 'abc' -> false
+print('共有', len(good), '筆留言提到good')
+print(good[0])
